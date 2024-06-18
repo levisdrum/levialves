@@ -115,47 +115,6 @@ a {
   opacity: 0.9;
 }
 
-/* BOTTOM */
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
-.bottom-redes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.bottom-redes li {
-  list-style: none;
-}
-
-.bottom-redes li a {
-  font-size: 1.5rem;
-  transition: all 0.3s;
-}
-
-.bottom-redes li a img {
-  transition: all .25s ease-in-out;
-}
-
-.bottom-redes li a img:hover {
-  opacity: 0.5;
-}
-
-.bottom p img {
-  transition: all .25s ease-in-out;
-}
-
-.bottom p:hover img {
-  margin-left: 10px;
-}
-
 /* TOP */
 
 .top {
@@ -251,6 +210,123 @@ a {
   }
 }
 
+/* BOTTOM */
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.bottom-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bottom-redes li {
+  list-style: none;
+}
+
+.bottom-redes li a {
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+
+.bottom-redes li a img {
+  transition: all .25s ease-in-out;
+}
+
+.bottom-redes li a img:hover {
+  opacity: 0.5;
+}
+
+.bottom p img {
+  transition: all .25s ease-in-out;
+}
+
+.bottom p:hover img {
+  margin-left: 10px;
+}
+
+/* About */
+
+.about-figure {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  left: 0;
+  top: 0;
+}
+
+.about-figure img {
+  width: 100%;
+  position: relative;
+  left: -10%;
+}
+
+.about-content {
+  display: flex;
+  height: 100%;
+}
+
+.about-content div {
+  width: 50%;
+}
+
+.about-content div:last-child {
+  width: calc(50% - -20%);
+  overflow-y: scroll;
+  height: calc(100vh - 21%);
+  overflow-x: hidden;
+  margin-top: 30px;
+  padding-right: 20px;
+  position: absolute;
+  right: calc( 50% - 71%);
+}
+
+.about .container {
+  position: relative;
+  z-index: 2;
+  justify-content: normal;
+}
+
+.about .container h2 {
+  margin-bottom: 51px;
+}
+
+/* VIDEO */
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video::after {
+  content: "";
+  background: #202020B2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
 /* bands */
 
 .bands ul {
@@ -313,83 +389,9 @@ a {
   text-transform: uppercase;
 }
 
-/* About */
-
-.about-figure {
-  position: absolute;
-  z-index: 1;
-  width: 50%;
-  left: 0;
-  top: 0;
-}
-
-.about-figure img {
-  width: 100%;
-  position: relative;
-  left: -10%;
-}
-
-.about-content {
-  display: flex;
-  height: 100%;
-}
-
-.about-content div {
-  width: 50%;
-}
-
-.about-content div:last-child {
-  width: calc(50% - -20%);
-  overflow-y: scroll;
-  height: calc(100vh - 21%);
-  overflow-x: hidden;
-  margin-top: 30px;
-  padding-right: 20px;
-  position: absolute;
-  right: calc( 50% - 71%);
-}
-
-.about .container {
-  position: relative;
-  z-index: 2;
-  justify-content: normal;
-}
-
-.about .container h2 {
-  margin-bottom: 51px;
-}
+/* Contact */
 
 /* endorse */
-
-/* VIDEO */
-
-.video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.video::after {
-  content: "";
-  background: #202020B2;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
 
 /* MODAL NAV */
 
@@ -538,8 +540,6 @@ a {
   line-height: 25px;
 }
 
-/* Contact */
-
 @media (max-width: 768px) {
   .container h2 {
     font-size: 32px;
@@ -579,12 +579,16 @@ a {
     height: calc(100vh - 35%);
   }
 
-  .left-component.ativo {
-    width: 100%;
-  }
-
   .video {
     overflow: hidden;
+  }
+
+  .contact-component.ativo {
+    height: 100% !important;
+  }
+
+  .left-component.ativo {
+    width: 100%;
   }
 
   .modal-nav ul li {
@@ -597,10 +601,6 @@ a {
 
   .home h1 span {
     font-size: 13px;
-  }
-
-  .contact-component.ativo {
-    height: 100% !important;
   }
 }
 /*# sourceMappingURL=bundle.css.map */
