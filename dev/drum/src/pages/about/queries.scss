@@ -1,0 +1,30 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px){
+    .about {
+        &-figure {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;    
+
+            img {
+                height: 100%;
+                left: -293px;
+                width: 890px;     
+            }
+        }
+
+        &-content {
+            display: block;
+            div {
+                &:last-child{
+                    width: 100%;
+                    right: inherit;
+                    height: calc(100vh - 35%);
+                }
+            }
+        }
+    }
+}

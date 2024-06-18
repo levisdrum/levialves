@@ -1,0 +1,14 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px){
+	.home {
+		h1 {
+			font-size: 32px;
+			span {
+				font-size: 13px;
+			}
+		}
+	}
+}

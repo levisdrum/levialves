@@ -1,0 +1,43 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+/* BOTTOM *////////////////////////////////////
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+            list-style: none;
+            a {
+                font-size: 1.5rem;
+                transition: all 0.3s;
+
+                img {
+                    transition: all .25s ease-in-out;
+                    &:hover {
+                       opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+
+		img {  transition: all .25s ease-in-out; }
+
+		&:hover {
+			img {
+				margin-left: 10px;
+			}
+		}
+	}
+}

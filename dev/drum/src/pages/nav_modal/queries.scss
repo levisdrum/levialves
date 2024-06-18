@@ -1,0 +1,15 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px) {
+    .modal {
+        &-nav {
+            ul {
+                li {
+                    font-size: 42px;
+                }
+            }
+        }
+    }
+}
