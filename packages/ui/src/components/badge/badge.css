@@ -1,0 +1,18 @@
+.DSLEVIS-ui-badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.DSLEVIS-ui-badge--default {
+  color: var(--color-brand-contrast);
+  background: var(--color-brand);
+}
+
+.DSLEVIS-ui-badge--subtle {
+  color: var(--color-foreground);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+}

@@ -1,0 +1,57 @@
+:root {
+  /* DSLEVIS global tokens */
+  --DSLEVIS-color-background: #050505;
+  --DSLEVIS-color-surface: #0f0f0f;
+  --DSLEVIS-color-surface-soft: #151515;
+  --DSLEVIS-color-surface-soft-2: #1d1d1d;
+  --DSLEVIS-color-foreground: #f5f5f5;
+  --DSLEVIS-color-foreground-muted: #b3b3b3;
+  --DSLEVIS-color-border: #2b2b2b;
+  --DSLEVIS-color-accent: #ffffff;
+  --DSLEVIS-color-focus-ring: #ffffff;
+
+  --DSLEVIS-radius-sm: 0.375rem;
+  --DSLEVIS-radius-md: 0.625rem;
+  --DSLEVIS-radius-lg: 0.875rem;
+
+  --DSLEVIS-space-1: 0.25rem;
+  --DSLEVIS-space-2: 0.5rem;
+  --DSLEVIS-space-3: 0.75rem;
+  --DSLEVIS-space-4: 1rem;
+  --DSLEVIS-space-5: 1.5rem;
+  --DSLEVIS-space-6: 2rem;
+  --DSLEVIS-space-7: 3rem;
+  --DSLEVIS-space-8: 4rem;
+
+  --DSLEVIS-font-family-sans: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --DSLEVIS-font-family-heading: "Space Grotesk", "Manrope", "Helvetica Neue", Arial, sans-serif;
+
+  /* Backward-compatible aliases for @levi/ui */
+  --color-background: var(--DSLEVIS-color-background);
+  --color-surface: var(--DSLEVIS-color-surface);
+  --color-surface-elevated: var(--DSLEVIS-color-surface-soft);
+  --color-surface-hover: var(--DSLEVIS-color-surface-soft-2);
+  --color-surface-hover-soft: var(--DSLEVIS-color-surface-soft);
+  --color-foreground: var(--DSLEVIS-color-foreground);
+  --color-foreground-muted: var(--DSLEVIS-color-foreground-muted);
+  --color-border: var(--DSLEVIS-color-border);
+  --color-brand: var(--DSLEVIS-color-accent);
+  --color-brand-hover: #d8d8d8;
+  --color-brand-contrast: var(--DSLEVIS-color-background);
+  --color-focus-ring: var(--DSLEVIS-color-focus-ring);
+
+  --radius-sm: var(--DSLEVIS-radius-sm);
+  --radius-md: var(--DSLEVIS-radius-md);
+  --radius-lg: var(--DSLEVIS-radius-lg);
+
+  --space-1: var(--DSLEVIS-space-1);
+  --space-2: var(--DSLEVIS-space-2);
+  --space-3: var(--DSLEVIS-space-3);
+  --space-4: var(--DSLEVIS-space-4);
+  --space-5: var(--DSLEVIS-space-5);
+  --space-6: var(--DSLEVIS-space-6);
+  --space-7: var(--DSLEVIS-space-7);
+  --space-8: var(--DSLEVIS-space-8);
+
+  --font-family-sans: var(--DSLEVIS-font-family-sans);
+}

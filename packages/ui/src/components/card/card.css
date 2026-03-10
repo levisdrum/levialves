@@ -1,0 +1,28 @@
+.DSLEVIS-ui-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-5);
+  min-height: 14rem;
+}
+
+.DSLEVIS-ui-card__eyebrow {
+  margin: 0;
+  color: var(--color-foreground-muted);
+  font-size: 0.875rem;
+}
+
+.DSLEVIS-ui-card__title {
+  margin: var(--space-2) 0;
+  font-size: 1.35rem;
+}
+
+.DSLEVIS-ui-card__description {
+  margin: 0;
+  color: var(--color-foreground-muted);
+  line-height: 1.5;
+}
+
+.DSLEVIS-ui-card__action {
+  margin-top: var(--space-4);
+}

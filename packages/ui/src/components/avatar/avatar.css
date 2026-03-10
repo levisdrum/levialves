@@ -1,0 +1,36 @@
+.DSLEVIS-ui-avatar {
+  position: relative;
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 9px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-elevated);
+}
+
+.DSLEVIS-ui-avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.DSLEVIS-ui-avatar__fallback {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  background: var(--color-surface-elevated);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.DSLEVIS-avatar-story--lg {
+  width: 5rem;
+  height: 5rem;
+}

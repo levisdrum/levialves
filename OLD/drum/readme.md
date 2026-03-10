@@ -1,0 +1,19 @@
+# PORTFOLIO LEVI ALVES
+
+## TECNOLOGIAS USADAS
+
+- HTML 5
+- CSS 3
+- SASS
+- GULP
+- YARN
+
+## AMBIENTE 
+
+- yarn install 
+- yarn install gulp
+- ASSISTIR PROJETO E BUILDA - gulp
+- ASSISTIR PROJETO RAPIDAMENTE SEM BUILD DE ARQUIVOS - gulp webserver
+
+
+

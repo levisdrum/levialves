@@ -1,0 +1,67 @@
+.DSLEVIS-ui-button {
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.DSLEVIS-ui-button--default {
+  background: var(--color-brand);
+  color: var(--color-brand-contrast);
+
+  &:hover {
+    background: var(--color-brand-hover, var(--color-brand));
+  }
+}
+
+.DSLEVIS-ui-button--secondary {
+  background: var(--color-surface-elevated);
+  color: var(--color-foreground);
+  border-color: var(--color-border);
+
+  &:hover {
+    background: var(--color-surface-hover, var(--color-surface-elevated));
+  }
+}
+
+.DSLEVIS-ui-button--subtle {
+  background: transparent;
+  color: var(--color-foreground);
+  border-color: var(--color-border);
+
+  &:hover {
+    background: var(--color-surface-hover-soft, var(--color-surface-elevated));
+  }
+}
+
+.DSLEVIS-ui-button--sm {
+  min-height: 2rem;
+  padding: 0 var(--space-3);
+}
+
+.DSLEVIS-ui-button--md {
+  min-height: 2.5rem;
+  padding: 0 var(--space-4);
+}
+
+.DSLEVIS-ui-button--lg {
+  min-height: 3rem;
+  padding: 0 var(--space-5);
+}

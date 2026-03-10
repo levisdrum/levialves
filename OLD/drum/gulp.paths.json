@@ -1,0 +1,32 @@
+{
+	"src": {
+		"views": {
+			"files": "./src/*.html",
+			"watch": "./src/**/*.html"
+		},
+    	"css": {
+    		"files": [
+				"./src/scss/main.scss",
+				"./src/**/**/*.scss"
+			],
+			"watch": [
+				"./src/**/*.scss",
+				"./src/**/**/*.scss"
+			]
+    	},
+		"js": [
+			"./src/js/**/*.js",
+			"./src/**/**/*.js",
+			"node_modules/jquery/dist/jquery.js"
+		],
+		"img": "./src/images/**/*",
+		"video": "./src/video/**/*"
+	},
+	"dest": {
+		"views": "./dist",
+		"css": "./dist/css",
+		"js": "./dist/js",
+		"img": "./dist/images",
+		"video": "./dist/video"
+	}
+}

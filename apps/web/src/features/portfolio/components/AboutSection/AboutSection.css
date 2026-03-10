@@ -1,0 +1,153 @@
+.DSLEVIS-about__list {
+  margin: 0.75rem 0 0;
+  padding-left: 1rem;
+}
+
+.DSLEVIS-about__list li {
+  margin-bottom: 0.4rem;
+  color: var(--DSLEVIS-color-foreground-muted);
+  line-height: 1.54;
+}
+
+.DSLEVIS-about__list--thinking strong {
+  color: var(--DSLEVIS-color-foreground);
+}
+
+.DSLEVIS-about__heading {
+  margin: 1rem 0 0.45rem;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.DSLEVIS-about__ds p,
+.DSLEVIS-about__life p {
+  margin: 0;
+  color: var(--DSLEVIS-color-foreground-muted);
+  line-height: 1.6;
+}
+
+.DSLEVIS-about__micro-grid {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.DSLEVIS-about__micro-card,
+.DSLEVIS-about__glossary div {
+  border: 1px solid var(--DSLEVIS-color-border);
+  border-radius: var(--DSLEVIS-radius-md);
+  background: var(--DSLEVIS-color-surface-soft);
+  padding: 0.62rem;
+  text-align: left;
+}
+
+.DSLEVIS-about__micro-card h5 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.DSLEVIS-about__micro-card p,
+.DSLEVIS-about__glossary dd {
+  margin-top: 0.35rem;
+  color: var(--DSLEVIS-color-foreground-muted);
+  line-height: 1.5;
+  margin-left: 0;
+}
+
+.DSLEVIS-about__glossary {
+  margin: 0.72rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.DSLEVIS-about__glossary dt {
+  margin: 0;
+  font-weight: 700;
+  text-align: left;
+}
+
+.DSLEVIS-about__life {
+  margin-top: 1rem;
+  border-top: 1px solid var(--DSLEVIS-color-border);
+  padding-top: 0.9rem;
+}
+
+.DSLEVIS-about__mosaic {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.DSLEVIS-about__mosaic-item {
+  margin: 0;
+  border: 1px solid var(--DSLEVIS-color-border);
+  border-radius: var(--DSLEVIS-radius-md);
+  overflow: hidden;
+  background: var(--DSLEVIS-color-surface);
+}
+
+.DSLEVIS-about__mosaic-item img {
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  display: block;
+}
+
+.DSLEVIS-about__mosaic-item figcaption {
+  padding: 0.5rem;
+  display: grid;
+  gap: 0.16rem;
+}
+
+.DSLEVIS-about__mosaic-item strong {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.DSLEVIS-about__mosaic-item span {
+  color: var(--DSLEVIS-color-foreground-muted);
+  font-size: 0.78rem;
+  line-height: 1.34;
+}
+
+@media (max-width: 1080px) {
+  .DSLEVIS-about__layout,
+  .DSLEVIS-about__micro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .DSLEVIS-about__glossary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .DSLEVIS-about__mosaic {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .DSLEVIS-about__glossary {
+    grid-template-columns: 1fr;
+  }
+
+  .DSLEVIS-about__mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .DSLEVIS-about__mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .DSLEVIS-about__mosaic-item img {
+    height: 190px;
+  }
+}
