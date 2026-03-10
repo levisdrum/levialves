@@ -7,6 +7,11 @@ it("renders with accessible name", () => {
   expect(screen.getByRole("button", { name: "Open profile" })).toBeInTheDocument();
 });
 
+it("defaults to button type for non-form actions", () => {
+  render(<Button>Open profile</Button>);
+  expect(screen.getByRole("button", { name: "Open profile" })).toHaveAttribute("type", "button");
+});
+
 it("renders as link when using asChild", () => {
   render(
     <Button asChild>
@@ -19,6 +24,17 @@ it("renders as link when using asChild", () => {
 
 it("has no critical accessibility violations", async () => {
   const { container } = render(<Button>Open profile</Button>);
+  const results = await axe(container);
+  expect(results.violations).toHaveLength(0);
+});
+
+it("keeps semantic link output when used asChild", async () => {
+  const { container } = render(
+    <Button asChild variant="secondary">
+      <a href="/portfolio">Open profile</a>
+    </Button>
+  );
+
   const results = await axe(container);
   expect(results.violations).toHaveLength(0);
 });

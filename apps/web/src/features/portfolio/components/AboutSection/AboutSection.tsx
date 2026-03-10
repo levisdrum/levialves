@@ -7,6 +7,7 @@ import {
   thinkingCards,
 } from "./AboutSection.content";
 import type { AboutSectionProps } from "./AboutSection.types";
+import { withBasePath } from "../../asset-path";
 import "./AboutSection.css";
 
 export function AboutSection({ locale, style }: AboutSectionProps) {
@@ -90,7 +91,7 @@ export function AboutSection({ locale, style }: AboutSectionProps) {
               className="DSLEVIS-about__mosaic-item"
               role="listitem"
             >
-              <img src={item.src} alt={item.alt} loading="lazy" />
+              <img src={withBasePath(item.src)} alt={item.alt} loading="lazy" />
               <figcaption>
                 <strong>{item.title[locale]}</strong>
                 <span>{item.caption[locale]}</span>

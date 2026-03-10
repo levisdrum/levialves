@@ -2,6 +2,7 @@ import { Github, Instagram, Linkedin, MonitorCog, UserRound, BriefcaseBusiness, 
 import { Avatar, AvatarFallback, AvatarImage, Button } from "@levi/ui";
 import { sidebarCopy, socialLinks } from "./Sidebar.content";
 import type { PortfolioSectionId, SidebarProps } from "./Sidebar.types";
+import { withBasePath } from "../../asset-path";
 import "./Sidebar.css";
 
 const navIcons: Record<PortfolioSectionId, typeof UserRound> = {
@@ -31,7 +32,7 @@ export function Sidebar({ activeSection, locale, setLocale, isoDate, formattedDa
   return (
     <aside className="DSLEVIS-sidebar DSLEVIS-reveal" style={style}>
       <Avatar className="DSLEVIS-sidebar__avatar">
-        <AvatarImage src="/img/profile-linkedin.jpg" alt="Levi Alves" loading="eager" />
+        <AvatarImage src={withBasePath("/img/profile-linkedin.jpg")} alt="Levi Alves" loading="eager" />
         <AvatarFallback>LA</AvatarFallback>
       </Avatar>
 
@@ -69,7 +70,7 @@ export function Sidebar({ activeSection, locale, setLocale, isoDate, formattedDa
         </div>
 
         <Button asChild size="sm" variant="subtle">
-          <a href="/pdf/levialves.pdf" target="_blank" rel="noreferrer">
+          <a href={withBasePath("/pdf/levialves.pdf")} target="_blank" rel="noreferrer">
             {copy.ctas.cv}
           </a>
         </Button>

@@ -2,6 +2,7 @@ import { ArrowUpRight, FolderKanban } from "lucide-react";
 import { Button } from "@levi/ui";
 import { caseStudies, casesSectionCopy } from "./CasesSection.content";
 import type { CasesSectionProps } from "./CasesSection.types";
+import { withBasePath } from "../../asset-path";
 import "./CasesSection.css";
 
 export function CasesSection({ locale, style }: CasesSectionProps) {
@@ -20,7 +21,7 @@ export function CasesSection({ locale, style }: CasesSectionProps) {
         {caseStudies.map((item) => (
           <article className="DSLEVIS-cases__item" key={item.title}>
             <div className="DSLEVIS-cases__media">
-              <img src={item.cover} alt={item.title} loading="lazy" />
+              <img src={withBasePath(item.cover)} alt={item.title} loading="lazy" />
             </div>
 
             <div className="DSLEVIS-cases__content">
