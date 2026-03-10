@@ -16,7 +16,7 @@ export const sidebarCopy: Record<Locale, SidebarCopy> = {
       contact: "Contato"
     },
     ctas: {
-      cv: "CV (PDF)"
+      cv: "Curriculo"
     }
   },
   en: {
@@ -33,7 +33,7 @@ export const sidebarCopy: Record<Locale, SidebarCopy> = {
       contact: "Contact"
     },
     ctas: {
-      cv: "CV (PDF)"
+      cv: "Resume"
     }
   }
 };

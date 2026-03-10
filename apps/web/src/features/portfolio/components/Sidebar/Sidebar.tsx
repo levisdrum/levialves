@@ -70,7 +70,7 @@ export function Sidebar({ activeSection, locale, setLocale, isoDate, formattedDa
         </div>
 
         <Button asChild size="sm" variant="subtle">
-          <a href={withBasePath("/pdf/levialves.pdf")} target="_blank" rel="noreferrer">
+          <a href={withBasePath("/cv.html")} target="_blank" rel="noreferrer">
             {copy.ctas.cv}
           </a>
         </Button>
